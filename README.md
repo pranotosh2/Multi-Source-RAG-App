@@ -22,6 +22,7 @@ This app allows users to upload or provide content from **PDFs, Text files, Web 
 ---
 
 ## 🏗️ Project Structure
+```dir
 
 LangChain/
 │
@@ -60,7 +61,7 @@ LangChain/
 
 ### 1️⃣ Clone the repository
 ```bash
-git clone https://github.com/USERNAME/REPO_NAME.git
+git clone https://github.com/pranotosh2/Multi-Source-RAG-App.git
 cd REPO_NAME
 
 2️⃣ Create virtual environment
