@@ -4,6 +4,9 @@ A **Retrieval-Augmented Generation (RAG)** application built using **LangChain, 
 This app allows users to upload or provide content from **PDFs, Text files, Web URLs, or YouTube links**, clean and process the content, and perform **question answering and summarization**.
 
 ---
+## 📸 Application Preview
+
+![RAG App UI](preview.png)
 
 ## 🚀 Features
 
