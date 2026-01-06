@@ -67,17 +67,17 @@ LangChain/
 git clone https://github.com/pranotosh2/Multi-Source-RAG-App.git
 cd REPO_NAME
 
-2️⃣ Create virtual environment
+## 2️⃣ Create virtual environment
 
 python -m venv venv
 source venv/bin/activate      # Linux / Mac
 venv\Scripts\activate         # Windows
 
-3️⃣ Install dependencies
+## 3️⃣ Install dependencies
 
 pip install -r requirements.txt
 
-🔑 Environment Variables
+## 🔑 Environment Variables
 
 Create a .env file:
 
@@ -89,22 +89,23 @@ streamlit run app.py
 
 🧩 How It Works
 
-Load content (PDF / Text / Web / YouTube)
+1.Load content (PDF / Text / Web / YouTube)
 
-Clean and normalize text
+2. Clean and normalize text
 
-Split text into chunks
+3. Split text into chunks
 
-Generate embeddings
+4. Generate embeddings
 
-Store vectors in FAISS
+5. Store vectors in FAISS
 
-Retrieve relevant chunks
+6. Retrieve relevant chunks
 
-Generate answer or summary using LLM
+7. Generate answer or summary using LLM
 
+---
 
-👨‍💻 Author
+## 👨‍💻 Author
 
 Developed as a portfolio-ready NLP & RAG project using modern LLM tooling.
 
