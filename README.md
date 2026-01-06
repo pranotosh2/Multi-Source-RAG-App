@@ -1,0 +1,109 @@
+# 📄 RAG-based Question Answering & Summarization App
+
+A **Retrieval-Augmented Generation (RAG)** application built using **LangChain, Hugging Face LLMs, FAISS, and Streamlit**.  
+This app allows users to upload or provide content from **PDFs, Text files, Web URLs, or YouTube links**, clean and process the content, and perform **question answering and summarization**.
+
+---
+
+## 🚀 Features
+
+- 📄 Upload **PDF** documents  
+- 📝 Upload **Text (.txt)** files  
+- 🌐 Paste **Website URLs**  
+- 🎥 Paste **YouTube video links** (automatic transcript extraction)  
+- 🧹 Automatic text cleaning & normalization  
+- ✂️ Smart chunking using LangChain splitters  
+- 🧠 Hugging Face embeddings  
+- 🔍 FAISS vector store for similarity search  
+- ❓ Context-aware Question Answering  
+- 📘 Large document summarization  
+- 🎨 Styled Streamlit UI  
+
+---
+
+## 🏗️ Project Structure
+
+LangChain/
+│
+├── app.py                     # Streamlit application
+├── qna.py                     # Q&A and summarization chains
+├── process.py                 # File processing logic
+│
+├── loader/
+│   └── loader.py              # PDF / Text / Web / YouTube loaders & cleaners
+│
+├── embeddings/
+│   └── embedding.py           # Embedding model loader
+│
+│
+├── requirements.txt
+├── README.md
+└── .gitignore
+
+
+
+---
+
+## 🧠 Tech Stack
+
+- Python  
+- Streamlit  
+- LangChain  
+- Hugging Face Inference API  
+- FAISS  
+- Sentence Transformers  
+- YouTube Transcript API  
+
+---
+
+## ⚙️ Installation
+
+### 1️⃣ Clone the repository
+```bash
+git clone https://github.com/USERNAME/REPO_NAME.git
+cd REPO_NAME
+
+2️⃣ Create virtual environment
+
+python -m venv venv
+source venv/bin/activate      # Linux / Mac
+venv\Scripts\activate         # Windows
+
+3️⃣ Install dependencies
+
+pip install -r requirements.txt
+
+🔑 Environment Variables
+
+Create a .env file:
+
+HUGGINGFACEHUB_API_TOKEN=hf_xxxxxxxxxxxxxxxxxxxxx
+
+▶️ Run the Application
+
+streamlit run app.py
+
+🧩 How It Works
+
+Load content (PDF / Text / Web / YouTube)
+
+Clean and normalize text
+
+Split text into chunks
+
+Generate embeddings
+
+Store vectors in FAISS
+
+Retrieve relevant chunks
+
+Generate answer or summary using LLM
+
+
+👨‍💻 Author
+
+Developed as a portfolio-ready NLP & RAG project using modern LLM tooling.
+
+⭐ If you like this project, please star the repository!
+
+
