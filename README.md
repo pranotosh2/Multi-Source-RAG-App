@@ -25,7 +25,6 @@ This app allows users to upload or provide content from **PDFs, Text files, Web 
 ---
 
 ## 🏗️ Project Structure
-```dir
 
 LangChain/
 │
@@ -68,14 +67,13 @@ git clone https://github.com/pranotosh2/Multi-Source-RAG-App.git
 cd REPO_NAME
 
 ## 2️⃣ Create virtual environment
-
-python -m venv venv
-venv\Scripts\Activate.ps1 # Windows
-
+conda create -n rag python=3.11
+conda activate rag
+---
 ## 3️⃣ Install dependencies
 
 pip install -r requirements.txt
-
+```
 ## 🔑 Environment Variables
 
 Create a .env file:
