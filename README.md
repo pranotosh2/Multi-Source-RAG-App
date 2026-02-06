@@ -25,7 +25,7 @@ This app allows users to upload or provide content from **PDFs, Text files, Web 
 ---
 
 ## 🏗️ Project Structure
-
+```
 LangChain/
 │
 ├── app.py                     # Streamlit application
@@ -46,7 +46,7 @@ LangChain/
 
 
 ---
-
+```
 ## 🧠 Tech Stack
 
 - Python  
@@ -81,9 +81,9 @@ Create a .env file:
 HUGGINGFACEHUB_API_TOKEN=hf_xxxxxxxxxxxxxxxxxxxxx
 
 ▶️ Run the Application
-
+```
 streamlit run app.py
-
+```
 🧩 How It Works
 
 1.Load content (PDF / Text / Web / YouTube)
