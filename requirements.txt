@@ -1,8 +1,8 @@
-streamlit
 langchain
 langchain-community
 langchain-core
 langchain-huggingface
+langchain-text-splitters
 faiss-cpu
 sentence-transformers
 huggingface-hub
@@ -11,3 +11,4 @@ youtube-transcript-api
 pypdf
 requests
 tiktoken
+unicodedata
