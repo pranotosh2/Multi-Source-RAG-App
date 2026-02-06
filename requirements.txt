@@ -12,4 +12,3 @@ youtube-transcript-api
 pypdf
 requests
 tiktoken
-unicodedata
