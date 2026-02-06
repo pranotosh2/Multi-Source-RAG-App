@@ -23,7 +23,7 @@ This app allows users to upload or provide content from **PDFs, Text files, Web 
 ---
 # 🏗️ Project Structure
 ```
-LangChain/
+Multi-Source-RAG-App/
 │
 ├── app.py                     # Streamlit application
 ├── qna.py                     # Q&A and summarization chains
