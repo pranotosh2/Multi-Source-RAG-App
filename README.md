@@ -77,6 +77,7 @@ HUGGINGFACEHUB_API_TOKEN=hf_xxxxxxxxxxxxxxxxxxxxx
 streamlit run app.py
 ```
 🧩 How It Works
+```
 1.Load content (PDF / Text / Web / YouTube)
 2. Clean and normalize text
 3. Split text into chunks
@@ -84,6 +85,7 @@ streamlit run app.py
 5. Store vectors in FAISS
 6. Retrieve relevant chunks
 7. Generate answer or summary using LLM
+```
 ---
 ## 👨‍💻 Author
 Developed as a portfolio-ready NLP & RAG project using modern LLM tooling.
