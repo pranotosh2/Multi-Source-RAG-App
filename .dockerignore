@@ -1,0 +1,10 @@
+.git
+.gitignore
+.env
+.devcontainer
+__pycache__
+*.pyc
+venv
+*.md
+LICENSE
+preview.png
