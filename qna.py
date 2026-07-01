@@ -2,23 +2,28 @@ from langchain_huggingface import ChatHuggingFace, HuggingFaceEndpoint
 from dotenv import load_dotenv
 from langchain_core.documents import Document
 from process import process_file
+from langchain_groq import ChatGroq
 from embeddings.embedding import get_embeddings
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.prompts import PromptTemplate
 from langchain_core.runnables import RunnableParallel, RunnableLambda, RunnablePassthrough
 from langchain_community.vectorstores import FAISS
-
+import os
 load_dotenv()
 
 
-llm = HuggingFaceEndpoint(
-    repo_id="deepseek-ai/DeepSeek-R1",
-    task="text-generation",
-    #max_new_tokens=700,
-    temperature=0.7     
-)
+# llm = HuggingFaceEndpoint(
+#     repo_id="deepseek-ai/DeepSeek-R1",
+#     task="text-generation",
+#     #max_new_tokens=700,
+#     temperature=0.7     
+# )
 
-model = ChatHuggingFace(llm=llm)
+model = ChatGroq(
+    temperature=0, 
+    model_name="openai/gpt-oss-120b", # Updated to a supported Llama 3 model on Groq
+    api_key=os.environ.get("GROQ_API_KEY", "dummy_key") # will fail on run if not set
+)
 
 def format_docs(docs):
   context_text = "\n\n".join(doc.page_content for doc in docs)

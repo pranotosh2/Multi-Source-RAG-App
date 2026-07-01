@@ -67,4 +67,4 @@ def process_file(file_path):
 #print(process_file(r"D:\LangChain\text.txt"))
 # url=r"https://www.geeksforgeeks.org/machine-learning/introduction-machine-learning/"
 # path=r"https://www.youtube.com/watch?v=q6kJ71tEYqM&t=3s"
-# print(process_file(path))
+# print(process_file(url))
