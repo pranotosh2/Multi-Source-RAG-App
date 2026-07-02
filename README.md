@@ -56,7 +56,6 @@ Multi-Source-RAG-App/
 │
 ├── requirements.txt           # Python dependencies
 ├── Dockerfile                 # Container image (python:3.11-slim)
-├── render.yaml                # Render.com deployment config
 ├── .env                       # Environment variables (not committed)
 ├── LICENSE                    # Apache 2.0
 └── README.md
@@ -145,15 +144,6 @@ docker run -p 8501:8501 --env-file .env multi-source-rag
 
 ---
 
-## ☁️ Deploy to Render
-
-1. Push this repo to GitHub.
-2. Create a new **Web Service** on [Render](https://render.com).
-3. Connect the repo and add the `GROQ_API_KEY` environment variable.
-4. Render will use `render.yaml` to auto-configure the build and start commands.
-
----
-
 ## 🧩 Tech Stack
 
 | Layer | Technology |
@@ -166,7 +156,7 @@ docker run -p 8501:8501 --env-file .env multi-source-rag
 | **Document Loaders** | PyPDFLoader, TextLoader, WebBaseLoader, YouTube Transcript API |
 | **Text Parsing** | BeautifulSoup, lxml |
 | **Containerization** | Docker |
-| **Deployment** | Render / Hugging Face Spaces |
+| **Deployment** | Docker / Hugging Face Spaces |
 
 ---
 
