@@ -2,12 +2,11 @@
 import streamlit as st 
 import os 
 from langchain_core.documents import Document 
-import base64 
 from dotenv import load_dotenv 
 from qna import qna, summary, format_docs 
 from process import process_file 
 import tempfile
-
+from bs4 import BeautifulSoup
 st.set_page_config(
     page_title="Universal RAG App",
     page_icon="🤖",

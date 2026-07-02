@@ -1,7 +1,6 @@
 from langchain_text_splitters import (
-    RecursiveCharacterTextSplitter,
-    CharacterTextSplitter
-)
+RecursiveCharacterTextSplitter,
+    CharacterTextSplitter)
 from langchain_core.documents import Document
 from loader.loader import (
     load_pdf,
@@ -66,5 +65,5 @@ def process_file(file_path):
 
 #print(process_file(r"D:\LangChain\text.txt"))
 # url=r"https://www.geeksforgeeks.org/machine-learning/introduction-machine-learning/"
-# path=r"https://www.youtube.com/watch?v=q6kJ71tEYqM&t=3s"
-# print(process_file(url))
+#path=r"https://www.youtube.com/watch?v=YDOT6Gphitg"
+#print(process_file(path))

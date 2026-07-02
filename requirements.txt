@@ -13,3 +13,7 @@ pypdf
 requests
 tiktoken
 langchain-groq
+
+beautifulsoup4
+lxml
+torchvision
