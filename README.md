@@ -35,7 +35,7 @@
 | **❓ Q&A** | Context-aware question answering with a RAG chain |
 | **📘 Summarization** | Comprehensive document summarization chain |
 | **🎨 UI** | Professional Streamlit interface with sidebar controls and two-column layout |
-| **🐳 Deployment** | Docker & Render-ready with included `Dockerfile` and `render.yaml` |
+| **🐳 Deployment** | Docker `Dockerfile` on `Huggigface`|
 
 ---
 
