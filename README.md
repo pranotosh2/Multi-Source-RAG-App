@@ -134,12 +134,14 @@ The app will open at **http://localhost:8501**.
 
 ## 🐳 Docker
 
-```bash
-# Build
-docker build -t multi-source-rag .
+You can pull the official Docker image directly from [Docker Hub](https://hub.docker.com/repository/docker/pranotosh/multi-source-rag-app/general):
 
-# Run
-docker run -p 8501:8501 --env-file .env multi-source-rag
+```bash
+# Pull from Docker Hub
+docker pull pranotosh/multi-source-rag-app:latest
+
+# Run container
+docker run -p 8501:8501 --env-file .env pranotosh/multi-source-rag-app:latest
 ```
 
 ---
