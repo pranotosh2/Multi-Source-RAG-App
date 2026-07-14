@@ -21,7 +21,7 @@ load_dotenv()
 
 model = ChatGroq(
     temperature=0, 
-    model_name="meta-llama/llama-4-scout-17b-16e-instruct", # Updated to a supported Llama 3 model on Groq
+    model_name="llama-3.3-70b-versatile", # Updated to a supported Llama 3 model on Groq
     api_key=os.environ.get("GROQ_API_KEY", "dummy_key") # will fail on run if not set
 )
 
