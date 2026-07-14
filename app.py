@@ -109,16 +109,10 @@ else:
         st.subheader("📝 Document Summary")
         st.markdown("Get a concise overview of the processed document.")
         if st.button("Generate Summary"):
-        with st.spinner("Analyzing and summarizing..."):
-            # 1. Initialize the map-reduce summarization chain
-            summary_chain = load_summarize_chain(model, chain_type="map_reduce")
-            
-            # 2. Run it on the chunked documents (st.session_state.docs) directly!
-            # No need to join them into 'full_text'
-            sum_result = summary_chain.invoke(st.session_state.docs)
-            
-            # 3. Output the result
-            st.markdown(f"> {sum_result['output_text']}")
+            with st.spinner("Analyzing and summarizing..."):
+                full_text = format_docs(st.session_state.docs)
+                sum_result = summary().invoke({"context": full_text})
+                st.markdown(f"> {sum_result}")
 
     with col2:
         st.subheader("💬 Ask Questions")
